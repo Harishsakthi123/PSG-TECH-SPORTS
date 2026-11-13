@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@theme {
+  --color-red: #e11d32;
+  --color-ink: #000000;
+  --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --font-body: Inter, "Segoe UI", system-ui, sans-serif;
+}
+html { scroll-behavior: smooth; color-scheme: dark; }
+body { min-width: 320px; background: #090a0d; color: #f5f5f6; font-family: var(--font-body); font-size: 16px; line-height: 1.6; }
+::selection { color: #fff; background: #b9162a; }
+:focus-visible { outline: 3px solid #fb7185; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+.h-display { font-family: var(--font-display); font-weight: 800; text-transform: uppercase; letter-spacing: -.025em; line-height: .98; }
+.input { width: 100%; min-height: 2.85rem; border: 1px solid #34353d; border-radius: .65rem; background: #111217; padding: .65rem .85rem; color: #fff; transition: border-color .18s ease, box-shadow .18s ease; }
+.input::placeholder { color: #85858e; }
+.input:focus { border-color: #e11d32; outline: none; box-shadow: 0 0 0 3px rgb(225 29 50 / 18%); }
+.input[aria-invalid="true"] { border-color: #fb7185; }
+.btn { display: inline-flex; min-height: 2.75rem; align-items: center; justify-content: center; gap: .5rem; border: 1px solid transparent; border-radius: .65rem; background: #d91e35; color: #fff; padding: .65rem 1.15rem; font-family: var(--font-display); font-weight: 700; text-transform: uppercase; letter-spacing: .035em; cursor: pointer; text-align: center; transition: background .18s ease, border-color .18s ease, transform .18s ease; }
+.btn:hover { background: #f43f5e; }
+.btn:active { transform: translateY(1px); }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.btn-ghost { border-color: #393a43; background: #15161b; color: #f5f5f6; }
+.btn-ghost:hover { border-color: #696a75; background: #202127; color: #fff; }
+.surface { border: 1px solid #292a32; border-radius: 1rem; background: linear-gradient(145deg, #15161c, #101115); box-shadow: 0 18px 45px rgb(0 0 0 / 18%); }
+.eyebrow { color: #fb7185; font-size: .75rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.status-pill { display: inline-flex; align-items: center; border: 1px solid rgb(251 113 133 / 35%); border-radius: 999px; background: rgb(225 29 50 / 12%); padding: .25rem .75rem; color: #fda4af; font-size: .8rem; font-weight: 700; text-transform: capitalize; }
+table { border-collapse: collapse; }
+th { font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
